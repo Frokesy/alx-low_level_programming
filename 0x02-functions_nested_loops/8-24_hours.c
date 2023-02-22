@@ -1,12 +1,16 @@
 #include "main.h"
 
-void jack_bauer(void) {
-int hour, minute;
-for (hour = 0; hour < 24; hour++) 
 {
-for (minute = 0; minute < 60; minute++) 
-{
-printf("%02d:%02d\n", hour, minute);
+int hours, minutes;
+for (hours = 0; hours < 24; hours++) {
+for (minutes = 0; minutes < 60; minutes++) {
+_putchar((hours / 10) + '0');  // print the tens digit of the hour
+_putchar((hours % 10) + '0');  // print the ones digit of the hour
+_putchar(':');  // print the colon separator
+_putchar((minutes / 10) + '0');  // print the tens digit of the minute
+_putchar((minutes % 10) + '0');  // print the ones digit of the minute
+_putchar('\n');  // print a newline character
 }
 }
 }
+
