@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+
 void times_table(void)
 {
 int i, j, result;
@@ -22,7 +28,8 @@ else
 _putchar(result / 10 + '0');
 _putchar(result % 10 + '0');
 }
-if (j < 9) {
+if (j < 9)
+{
 _putchar(',');
 _putchar(' ');
 }
