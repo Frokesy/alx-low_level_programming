@@ -1,4 +1,7 @@
-int add(int a, int b) {
-    int sum = a + b;
-    return sum;
+#include "main.h"
+
+int add(int a, int b)
+{
+int sum = a + b;
+return sum;
 }
