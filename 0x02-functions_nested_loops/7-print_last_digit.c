@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit-prints the last digit of an interger.
- * n:number to compute last digit.
+ * @n:number to compute last digit.
  * Return:last digit.
 */
 
