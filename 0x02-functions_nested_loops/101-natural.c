@@ -1,13 +1,20 @@
-#include "main.h"
+#include <stdio.h>
 
-int main() 
+/**
+ * main - Prints natural numbers below 1024 that are
+ * multiplies of 3 or 5
+ *
+ * Return: Always 0.
+ */
+
+int main(void)
 {
-int sum = 0;
-for (int i = 0; i < 1024; i++) {
-if (i % 3 == 0 || i % 5 == 0) {
-sum += i;
+int a, b;
+for (a = 1; a < 1024; a++)
+{
+if ((a % 3) == 0 || (a % 5) == 0)
+b += a;
 }
-}
-printf("%d\n", sum);
-return 0;
+printf("%d\n", b);
+return (0);
 }

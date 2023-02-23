@@ -1,18 +1,25 @@
 #include <stdio.h>
 
-int main() {
-    int fib[50];
-    fib[0] = 1;
-    fib[1] = 2;
+/**
+ *main - Prints the add of the Fibonacci numbers
+ *
+ * Return: Always 0.
+ */
 
-    for (int i = 2; i < 50; i++) {
-        fib[i] = fib[i-1] + fib[i-2];
-    }
-
-    for (int i = 0; i < 49; i++) {
-        printf("%d, ", fib[i]);
-    }
-    printf("%d\n", fib[49]);
-
-    return 0;
+int main(void)
+{
+int c;
+long int n1, n2, fn;
+n1 = 1;
+n2 = 2;
+printf("%ld, %ld", n1, n2);
+for (c = 0; c < 48; c++)
+{
+fn = n1 + n2;
+printf(", %ld", fn);
+n1 = n2;
+n2 = fn;
+}
+printf("\n");
+return (0);
 }
