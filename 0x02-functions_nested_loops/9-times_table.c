@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * times_table - Prints the 9 times table
  *
- * Return: Always 0.
- */
+ * Return: no return
+*/
 
 void times_table(void)
 {
