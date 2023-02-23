@@ -1,13 +1,13 @@
 include "main.h"
 
-/***
+/**
  * print_times_table - Prints the n times table
  *
  * @n: number times table (0 < n <= 15)
  *
  * Return: no return
  */
-
+ 
 void print_times_table(int n)
 {
 int a, b, op;
@@ -36,7 +36,7 @@ _putchar((op % 10) + 48);
 else
 {
 _putchar(((op / 100) % 10) + 48);
- _putchar(((op / 10) % 10) + 48);
+_putchar(((op / 10) % 10) + 48);
 _putchar((op % 10) + 48);
 }
 }
