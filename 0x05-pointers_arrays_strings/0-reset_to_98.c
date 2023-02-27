@@ -14,10 +14,10 @@ void reset_to_98(int *n)
 }
 int main(void)
 {
-int num = 10;
-int *ptr = &num;
-printf("num = %d\n", num);
-reset_to_98(ptr);
-printf("num = %d\n", num);
-return 0;
+int n;
+n = 402;
+printf("n=%d\n", n);
+reset_to_98(&n);
+printf("n=%d\n", n);
+return (0);
 }
