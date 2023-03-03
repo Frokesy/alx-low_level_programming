@@ -1,4 +1,5 @@
 #include "main.h"
+#include "<stdio.h>"
 
 /**
  * print_number - prints an integer
@@ -8,14 +9,14 @@ void print_number(int n)
 {
 int divisor = 1;
 if (n < 0) {
-_putchar('-');
+putchar('-');
 n = -n;
 }
 while (n / divisor > 9) {
 divisor *= 10;
 }
 while (divisor != 0) {
-_putchar('0' + n / divisor);
+putchar('0' + n / divisor);
 n %= divisor;
 divisor /= 10;
 }
