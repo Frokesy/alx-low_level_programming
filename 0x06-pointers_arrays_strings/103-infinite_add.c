@@ -33,10 +33,10 @@ if (carry == 1)
 {
 if (len1 + len2 + 1 > size_r)
 {
-return 0;
+return (0);
 }
 r[0] = '1';
-return &r[0];
+return (&r[0]);
 }
-return &r[len1 - j];
+return (&r[len1 - j]);
 }

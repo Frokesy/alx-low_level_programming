@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "<stdio.h>"
 
 /**
  * main - prints a[2] = 98, followed by a new line
@@ -8,10 +8,9 @@
 
 int main(void)
 {
-int a[5];
-int *p;
-a[2] = 1024;
-p = &a[2];
-printf("a[2] = %d\n", *(p));
+int a[] = {0, 1, 2, 3, 4, 5};
+int *p = a + 2;
+*p = 98;
+printf("a[2] = %d\n", *(a + 2));
 return (0);
 }
