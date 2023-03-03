@@ -1,29 +1,31 @@
 #include "main.h"
 
 /**
- * cap_string - Capitalizes all words of a string
- * @s: the string to capitalize
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be modified.
  *
- * Return: pointer to the capitalized string
+ * Return: A pointer to the modified string.
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 int i;
-if (s == NULL)
-return (NULL);
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
-if (i == 0 || s[i - 1] == ' ' || s[i - 1] == '\t' ||
-s[i - 1] == '\n' || s[i - 1] == ',' || s[i - 1] == ';' ||
-s[i - 1] == '.' || s[i - 1] == '!' || s[i - 1] == '?' ||
-s[i - 1] == '"' || s[i - 1] == '(' || s[i - 1] == ')' ||
-s[i - 1] == '{' || s[i - 1] == '}')
+if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n'
+|| str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.'
+|| str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"'
+|| str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{'
+|| str[i - 1] == '}')
 {
-if (s[i] >= 'a' && s[i] <= 'z')
+if (str[i] >= 'a' && str[i] <= 'z')
+str[i] = str[i] - 32;
+}
+else
 {
-s[i] -= 32;
+if (str[i] >= 'A' && str[i] <= 'Z')
+str[i] = str[i] + 32;
 }
 }
+return (str);
 }
-return (s);
-}
+
